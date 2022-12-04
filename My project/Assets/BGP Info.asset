@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
+  m_Name: BGP Info
+  m_EditorClassIdentifier: 
+  icon: {fileID: 2800000, guid: 284f22f4ce2313e4490165feaaedbfec, type: 3}
+  title: BGP Project Info
+  sections:
+  - heading: Public and Private accessors
+    text: 'All types and type members have an accessibility level. The accessibility
+      level controls whether they can be used from other code in your assembly or
+      other assemblies. An assembly is a .dll or .exe created by compiling one or
+      more .cs files in a single compilation. Use the following access modifiers
+      to specify the accessibility of a type or member when you declare it:  public:
+      The type or member can be accessed by any other code in the same assembly or
+      another assembly that references it. The accessibility level of public members
+      of a type is controlled by the accessibility level of the type itself. private:
+      The type or member can be accessed only by code in the same class or struct.
+      protected: The type or member can be accessed only by code in the same class,
+      or in a class that is derived from that class. internal: The type or member
+      can be accessed by any code in the same assembly, but not from another assembly.
+      In other words, internal types or members can be accessed from code that is
+      part of the same compilation. protected internal: The type or member can be
+      accessed by any code in the assembly in which it''s declared, or from within
+      a derived class in another assembly. private protected: The type or member
+      can be accessed by types derived from the class that are declared within its
+      containing assembly. Not all access modifiers are valid for all types or members
+      in all contexts. In some cases, the accessibility of a type member is constrained
+      by the accessibility of its containing type.                                                                    
+      For more information, see:'
+    linkText: Access modifiers
+    url: https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers
+  - heading: Awake vs Start
+    text: Start is called on the frame when a script is enabled just before any of
+      the Update methods are called the first time.  Like the Awake function, Start
+      is called exactly once in the lifetime of the script. However, Awake is called
+      when the script object is initialised, regardless of whether or not the script
+      is enabled. Start may not be called on the same frame as Awake if the script
+      is not enabled at initialisation time.  The Awake function is called on all
+      objects in the Scene before any object's Start function is called. This fact
+      is useful in cases where object A's initialisation code needs to rely on object
+      B's already being initialised; B's initialisation should be done in Awake,
+      while A's should be done in Start.  Where objects are instantiated during gameplay,
+      their Awake function is called after the Start functions of Scene objects have
+      already completed.  The Start function can be defined as a Coroutine, which
+      allows Start to suspend its execution (yield).
+    linkText: Unity Documentation
+    url: https://docs.unity3d.com/ScriptReference/MonoBehaviour.Start.html#:~:text=Start%20is%20called%20on%20the,not%20the%20script%20is%20enabled.
+  - heading: Update vs FixedUpdate
+    text: Update runs once per frame. FixedUpdate can run once, zero, or several
+      times per frame, depending on how many physics frames per second are set in
+      the time settings, and how fast/slow the framerate is. It's for this reason
+      that FixedUpdate should be used when applying forces, torques, or other physics-related
+      functions - because you know it will be executed exactly in sync with the physics
+      engine itself.  Whereas Update() can vary out of step with the physics engine,
+      either faster or slower, depending on how much of a load the graphics are putting
+      on the rendering engine at any given time, which - if used for physics - would
+      give correspondingly variant physical effects!
+    linkText: Stack Overflow
+    url: https://stackoverflow.com/questions/34447682/what-is-the-difference-between-update-fixedupdate-in-unity
+  - heading: Casting, Type Conversions and Constraints
+    text: "Because C# is statically-typed at compile time, after a variable is declared,
+      it cannot be declared again or assigned a value of another type unless that
+      type is implicitly convertible to the variable's type. For example, the string
+      cannot be implicitly converted to int. Therefore, after you declare i as an
+      int, you cannot assign the string \"Hello\" to it. However, you might sometimes
+      need to copy a value into a variable or method parameter of another type. For
+      example, you might have an integer variable that you need to pass to a method
+      whose parameter is typed as double. Or you might need to assign a class variable
+      to a variable of an interface type. These kinds of operations are called type
+      conversions. In C#, you can perform the following kinds of conversions:  Implicit
+      conversions: No special syntax is required because the conversion always succeeds
+      and no data will be lost. Examples include conversions from smaller to larger
+      integral types, and conversions from derived classes to base classes.  Explicit
+      conversions (casts): Explicit conversions require a cast expression. Casting
+      is required when information might be lost in the conversion, or when the conversion
+      might not succeed for other reasons. Typical examples include numeric conversion
+      to a type that has less precision or a smaller range, and conversion of a base-class
+      instance to a derived class.  User-defined conversions: User-defined conversions
+      are performed by special methods that you can define to enable explicit and
+      implicit conversions between custom types that do not have a base class\u2013derived
+      class relationship. For more information, see User-defined conversion operators. 
+      Conversions with helper classes: To convert between non-compatible types, such
+      as integers and System.DateTime objects, or hexadecimal strings and byte arrays,
+      you can use the System.BitConverter class, the System.Convert class, and the
+      Parse methods of the built-in numeric types, such as Int32.Parse. For more
+      information, see How to convert a byte array to an int, How to convert a string
+      to a number, and How to convert between hexadecimal strings and numeric types.                                                           
+      Constants are immutable values which are known at compile time and do not change
+      for the life of the program. Constants are declared with the const modifier.
+      Only the C# built-in types (excluding System.Object) may be declared as const.
+      User-defined types, including classes, structs, and arrays, cannot be const.
+      Use the readonly modifier to create a class, struct, or array that is initialized
+      one time at run time (for example in a constructor) and thereafter cannot be
+      changed.  C# does not support const methods, properties, or events.  The enum
+      type enables you to define named constants for integral built-in types (for
+      example int, uint, long, and so on). For more information, see enum.  Constants
+      must be initialized as they are declared."
+    linkText: 
+    url: 
+  - heading: Parameters and Arguments
+    text: 'In C#, arguments can be passed to parameters either by value or by reference.
+      Remember that C# types can be either reference types (class) or value types
+      (struct):  Pass by value means passing a copy of the variable to the method.
+      Pass by reference means passing access to the variable to the method. A variable
+      of a reference type contains a reference to its data. A variable of a value
+      type contains its data directly. Because a struct is a value type, when you
+      pass a struct by value to a method, the method receives and operates on a copy
+      of the struct argument. The method has no access to the original struct in
+      the calling method and therefore can''t change it in any way. The method can
+      change only the copy.  A class instance is a reference type, not a value type.
+      When a reference type is passed by value to a method, the method receives a
+      copy of the reference to the class instance. That is, the called method receives
+      a copy of the address of the instance, and the calling method retains the original
+      address of the instance. The class instance in the calling method has an address,
+      the parameter in the called method has a copy of the address, and both addresses
+      refer to the same object. Because the parameter contains only a copy of the
+      address, the called method cannot change the address of the class instance
+      in the calling method. However, the called method can use the copy of the address
+      to access the class members that both the original address and the copy of
+      the address reference. If the called method changes a class member, the original
+      class instance in the calling method also changes.                                                           
+      A parameter is the variable listed inside the parentheses in the function definition.
+      An argument is the actual value that is sent to the function when it is called.'
+    linkText: 
+    url: 
+  loadedLayout: 0
