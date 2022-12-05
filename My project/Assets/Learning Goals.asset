@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
+  m_Name: Learning Goals
+  m_EditorClassIdentifier: 
+  icon: {fileID: 0}
+  title: Learning Goals and Outcomes
+  sections:
+  - heading: Leaning Goals
+    text: Like most of the other students probably do, I have a small backlog of
+      passion projects that I'd like to work on and I've been hoping that even if
+      I wouldn't learn the things I would need to achieve them, I would at least
+      take the first step on that road. That being said, when I first came into the
+      course I have to admit I didn't really have any expectations. I thought that
+      I would learn to program videogames but I didn't really have any other preconceptions
+      about what that would entail or how it would happen. I had a vague idea of
+      how videogames happened from having worked with Gamebryo and the Neverwinter
+      Nights 2 level editor back in the early 2000s, but beyond some light modding
+      work for Paradox Interactive games I've never really thought on a deeper level
+      about what exactly needs to go into it.                                                                                       
+      A couple weeks after orientation I started getting friendly with Tero, and
+      with his help and guidance I feel that I really started to take off in my progress
+      and understanding, as well as with my drive to learn more. In the early weeks
+      he helped me a lot with getting a grasp on the basics when Jere was too busy
+      to give help to everyone, and I have to admit I was more than a bit sad when
+      Tero told me that he, understandably, tested out of BGP. This was, however,
+      a good thing as it removed the crutch that I was leaning on and allowed me
+      to use the skills that I had learned in a way that would actually cement them
+      in my mind rather than always going to Tero for help.                                                               
+      A few weeks later during the learn one teach one presentations, I was inspired
+      again by Kristian's raycasting presentation and the work that he was able to
+      put into the task. I knew that I wanted to work with him in the future, and
+      I was really happy when I was able to join the group he made for Sprint Week
+      because I knew he had a lot to teach me.                                                             
+      I've said this before and I'll say it again, Sprint Week was the single best
+      part of the course. Throughout the weeks I had found myself getting frustrated
+      with the demo tasks and the creator kit and I never really knew why, but when
+      my team got into swing with the Sprint Week project it hit me full force, that
+      I was frustrated because THIS is what I had expected school to be like, it
+      was what I had been wanting, and I absolutely loved it. As exhausting and stressful
+      as it was, being able to look back at the experience at the end of the week
+      and still want more was a galvinizing moment for me - I knew I'd chosen the
+      right field for me, now I only had to rise to the task of becoming worthy of
+      being a part of it.
+    linkText: 
+    url: 
+  - heading: Outcomes
+    text: I had this feeling that Tero knew a lot and I wanted to work with him,
+      but I knew that I would need to improve rapidly to be of any help working on
+      a team with him. I feel like I've done that pretty admirably, I've managed
+      to keep up with all of the demo tasks and even do the advanced tasks when time
+      and family allowed, I've gone above and beyond on most of the assignments,
+      and I've taken in as much information as is given to me on the side.                                                                                               
+      I've grown familiar with the URP system and can convert assets, materials and
+      projects as needed. Although I need more practice and understanding, I'm familiar
+      with the post processing effects and what they are capable of doing - similarly
+      I am also familiar with lighting in both the baked lighting and volumetric
+      styles.  On the scripting side, I can create basic scripts proficiently and
+      follow naming conventions as well as use an orderly structure within the code
+      itself. I can create methods and call them from within the script or from a
+      separate script. I know the difference between Arrays and Lists and I have
+      a firm handle on basic variable types - both how and when to use them.                                                                                     
+      I feel like I've accomplished a lot of learning in the span of one semester,
+      and although my grade may not end up reflecting my progress I'm happy with
+      the pace I've been keeping and I hope to expand my knowledge through use of
+      Udemy courses and other materials. I have projects that I am working on and
+      will continue to gain experience and knowledge through them, with the help
+      of my teammates of course. I guess I'll close with saying thanks, it's nice
+      to finally be doing something that I feel like has some meaning and purpose.
+      Outside of raising my kids, I haven't really found that since I moved to Finland,
+      so it's nice to feel like a contributing member of society again. Also, watching
+      my oldest son play Project Void and be so happy and enthralled by a silly little
+      game I helped make?                                                                           
+      That's everything I could ever want.
+    linkText: 
+    url: 
+  loadedLayout: 0

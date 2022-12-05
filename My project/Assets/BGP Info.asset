@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BGP Info
   m_EditorClassIdentifier: 
   icon: {fileID: 2800000, guid: 284f22f4ce2313e4490165feaaedbfec, type: 3}
-  title: BGP Project Info
+  title: BGP Demo Task Study Terms
   sections:
   - heading: Public and Private accessors
     text: 'All types and type members have an accessibility level. The accessibility
